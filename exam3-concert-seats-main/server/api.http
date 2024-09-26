@@ -1,0 +1,41 @@
+### Get all concerts
+GET http://localhost:3001/api/concerts HTTP/1.1
+Content-Type: application/json
+### Get a specific concert by ID
+GET http://localhost:3001/api/concerts/1 HTTP/1.1
+Content-Type: application/json
+### Login as a user
+POST http://localhost:3001/api/session HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "enrico@test.com",
+  "password": "pwd"
+}
+### Check if the user is logged in
+GET http://localhost:3001/api/session/current HTTP/1.1
+### Check if the user is logged in
+DELETE  http://localhost:3001/api/session/current HTTP/1.1
+
+
+### Check auth-token
+GET http://localhost:3001/api/auth-token HTTP/1.1
+
+### Get Non-Booked Concerts for an authenticated user
+GET http://localhost:3001/api/concerts/non-booked
+
+### Get all reservations of the logged-in user
+GET http://localhost:3001/api/reservations HTTP/1.1
+### Create a new reservation
+POST http://localhost:3001/api/reservations/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "seats": ["4A", "4B"]
+}
+### Delete a specific reservation
+DELETE http://localhost:3001/api/reservations/73 HTTP/1.1
+### Get the information relative to an reservation
+GET http://localhost:3001/api/reservations/1 HTTP/1.1
+Content-Type: application/json
+

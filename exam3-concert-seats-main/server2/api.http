@@ -1,0 +1,7 @@
+POST http://localhost:3002/api/discount HTTP/1.1
+
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJwcmVtaXVtIiwiYXV0aElkIjoxMjM0LCJpYXQiOjE3MjYzMjI3MDcsImV4cCI6MTcyNjMyMjc2N30._AZmlEd0--kHt1iKJHW1L6nuRu3N7NLw65E7bLaLikg
+{
+  "seats": ["1A", "10B", "10C", "13C"]
+}
